@@ -1,7 +1,7 @@
 const content = document.getElementById("app");
 
 function loadTP(tp) {
-  fetch(`/src/views/${tp}.html`)
+  fetch(`views/${tp}.html`)
     .then(res => res.text())
     .then(html => {
       content.innerHTML = html;
